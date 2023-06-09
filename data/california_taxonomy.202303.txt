@@ -1,0 +1,253 @@
+OSM
+├── aerialway
+│   └── pylon
+├── aeroway
+│   ├── hangar
+│   ├── helipad
+│   ├── holding_position
+│   ├── parking_position
+│   └── taxiway
+├── amenity
+│   ├── atm
+│   ├── bank
+│   ├── bar
+│   ├── bbq
+│   ├── bench
+│   ├── bicycle_parking
+│   ├── cafe
+│   ├── car_wash
+│   ├── charging_station
+│   ├── clinic
+│   ├── community_centre
+│   ├── dentist
+│   ├── drinking_water
+│   ├── fast_food
+│   ├── fire_station
+│   ├── fountain
+│   ├── fuel
+│   ├── library
+│   ├── parking
+│   │   ├── multi-storey
+│   │   └── street_side
+│   ├── parking_entrance
+│   ├── parking_space
+│   ├── pharmacy
+│   ├── place_of_worship
+│   ├── post_box
+│   ├── post_office
+│   ├── recycling
+│   ├── restaurant
+│   ├── school__amenity
+│   ├── shelter
+│   ├── social_facility
+│   ├── theatre
+│   ├── toilets
+│   ├── vending_machine
+│   ├── waste_basket
+│   └── waste_disposal
+├── bicycle
+│   └── designated
+├── building
+│   ├── apartments__building
+│   ├── barn
+│   ├── cabin
+│   ├── carport
+│   ├── church
+│   ├── college
+│   ├── commercial__building
+│   ├── dormitory
+│   ├── farm__building
+│   ├── farm_auxiliary
+│   ├── garage
+│   ├── garages
+│   ├── greenhouse
+│   ├── hospital
+│   ├── hotel__building
+│   ├── house
+│   ├── industrial__building
+│   ├── office__building
+│   ├── residential__building
+│   ├── retail__building
+│   ├── roof
+│   ├── school__building
+│   ├── semidetached_house
+│   ├── shed
+│   ├── static_caravan
+│   ├── terrace
+│   ├── university
+│   └── warehouse
+├── building_type
+│   ├── commercial__building_type
+│   ├── education
+│   ├── industrial__building_type
+│   └── office__building_type
+├── emergency
+│   ├── fire_hydrant
+│   └── phone
+├── highway
+│   ├── bridleway
+│   ├── construction__highway
+│   ├── corridor
+│   ├── cycleway
+│   ├── footway
+│   │   ├── access_aisle
+│   │   └── sidewalk
+│   ├── give_way
+│   ├── living_street
+│   ├── motorway
+│   ├── motorway_junction
+│   ├── motorway_link
+│   ├── path
+│   ├── pedestrian
+│   ├── primary
+│   ├── primary_link
+│   ├── residential__highway
+│   ├── secondary
+│   ├── secondary_link
+│   ├── service
+│   │   ├── alley
+│   │   ├── drive-through
+│   │   ├── driveway
+│   │   ├── emergency_access
+│   │   ├── parking_aisle
+│   │   ├── spur
+│   │   └── yard
+│   ├── steps
+│   ├── street_lamp
+│   ├── tertiary
+│   ├── tertiary_link
+│   ├── track__highway
+│   ├── trunk
+│   ├── trunk_link
+│   ├── turning_circle
+│   └── turning_loop
+├── historic
+│   └── memorial
+├── kerb
+│   ├── flush
+│   ├── lowered
+│   └── raised
+├── landuse
+│   ├── cemetery
+│   ├── commercial__landuse
+│   ├── construction__landuse
+│   ├── farm__landuse
+│   ├── farmland
+│   ├── farmyard
+│   ├── forest
+│   ├── grass
+│   ├── industrial__landuse
+│   ├── meadow
+│   ├── orchard
+│   ├── quarry
+│   ├── recreation_ground
+│   ├── religious
+│   ├── residential__landuse
+│   ├── retail__landuse
+│   └── vineyard
+├── leaf_cycle
+│   └── evergreen
+├── leisure
+│   ├── bleachers
+│   ├── fitness_centre
+│   ├── garden
+│   ├── nature_reserve
+│   ├── outdoor_seating
+│   ├── park
+│   ├── picnic_table
+│   ├── pitch
+│   ├── playground
+│   ├── sports_centre
+│   ├── swimming_pool
+│   │   ├── inground
+│   │   └── outdoor
+│   └── track__leisure
+├── man_made
+│   ├── bridge
+│   ├── flagpole
+│   ├── manhole
+│   │   ├── drain__manhole
+│   │   └── sewer
+│   ├── mast
+│   ├── petroleum_well
+│   ├── pier
+│   ├── pipeline
+│   ├── storage_tank
+│   ├── street_cabinet
+│   ├── survey_point
+│   ├── tower
+│   └── utility_pole
+├── natural
+│   ├── bare_rock
+│   ├── beach
+│   ├── cliff
+│   ├── coastline
+│   ├── grassland
+│   ├── heath
+│   ├── peak
+│   ├── sand
+│   ├── scrub
+│   ├── shrub
+│   ├── spring
+│   ├── tree
+│   ├── tree_row
+│   ├── water
+│   │   ├── basin
+│   │   ├── lake
+│   │   ├── pond
+│   │   ├── reservoir
+│   │   └── river__water
+│   ├── wetland
+│   │   └── marsh
+│   └── wood
+├── place
+│   ├── hamlet
+│   ├── locality
+│   ├── neighbourhood
+│   └── plot
+├── public_transport
+│   └── platform
+├── railway
+│   ├── abandoned
+│   ├── buffer_stop
+│   ├── disused
+│   ├── level_crossing
+│   ├── light_rail
+│   ├── rail
+│   └── switch
+├── shop
+│   ├── alcohol
+│   ├── beauty
+│   ├── car
+│   ├── car_repair
+│   ├── clothes
+│   ├── convenience
+│   ├── department_store
+│   ├── gift
+│   ├── hairdresser
+│   ├── mobile_phone
+│   └── supermarket
+├── tourism
+│   ├── artwork
+│   ├── attraction
+│   ├── camp_pitch
+│   ├── camp_site
+│   ├── hotel__tourism
+│   ├── information
+│   │   ├── board
+│   │   └── guidepost
+│   ├── motel
+│   ├── museum
+│   ├── picnic_site
+│   └── viewpoint
+├── tunnel
+│   └── culvert
+├── type
+│   └── route
+└── waterway
+    ├── canal
+    ├── dam
+    ├── ditch
+    ├── drain__waterway
+    ├── river__waterway
+    └── stream

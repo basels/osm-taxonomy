@@ -1,0 +1,227 @@
+OSM
+├── aeroway
+│   └── taxiway
+├── amenity
+│   ├── atm
+│   ├── bank
+│   ├── bar
+│   ├── bench
+│   ├── cafe
+│   ├── car_rental
+│   ├── doctors
+│   ├── drinking_water
+│   ├── fast_food
+│   ├── fountain
+│   ├── fuel
+│   ├── grave_yard
+│   ├── kindergarten
+│   ├── parking
+│   ├── pharmacy
+│   ├── place_of_worship
+│   ├── post_box
+│   ├── post_office
+│   ├── recycling
+│   ├── restaurant
+│   ├── school__amenity
+│   ├── shelter__amenity
+│   ├── shower
+│   ├── taxi
+│   ├── telephone
+│   ├── theatre
+│   ├── toilets
+│   ├── waste_basket
+│   └── waste_disposal
+├── building
+│   ├── apartments
+│   ├── carport
+│   ├── church
+│   ├── commercial__building
+│   ├── farm
+│   ├── farm_auxiliary
+│   ├── garage
+│   ├── greenhouse
+│   ├── hotel__building
+│   ├── house
+│   ├── industrial__building
+│   ├── residential__building
+│   ├── retail__building
+│   ├── roof
+│   ├── ruins__building
+│   ├── school__building
+│   ├── shed
+│   ├── shelter__building
+│   ├── tent
+│   ├── terrace
+│   └── warehouse
+├── emergency
+│   └── fire_hydrant
+├── highway
+│   ├── construction
+│   ├── cycleway
+│   ├── footway
+│   │   └── sidewalk
+│   ├── living_street
+│   ├── milestone
+│   ├── motorway
+│   ├── motorway_junction
+│   ├── motorway_link
+│   ├── path
+│   ├── pedestrian
+│   ├── primary
+│   ├── primary_link
+│   ├── proposed
+│   ├── residential__highway
+│   ├── secondary
+│   ├── secondary_link
+│   ├── service
+│   │   ├── alley
+│   │   ├── driveway
+│   │   └── parking_aisle
+│   ├── steps
+│   ├── street_lamp
+│   ├── tertiary
+│   ├── tertiary_link
+│   ├── track
+│   ├── trunk
+│   ├── trunk_link
+│   └── turning_circle
+├── historic
+│   ├── archaeological_site
+│   ├── boundary_stone
+│   ├── castle
+│   ├── memorial
+│   └── ruins__historic
+├── internet_access
+│   └── wlan
+├── landuse
+│   ├── aquaculture
+│   ├── cemetery
+│   ├── commercial__landuse
+│   ├── farmland
+│   ├── farmyard
+│   ├── forest
+│   ├── grass
+│   ├── greenfield
+│   ├── greenhouse_horticulture
+│   ├── industrial__landuse
+│   ├── meadow
+│   ├── military
+│   ├── orchard
+│   ├── quarry
+│   ├── railway
+│   │   ├── abandoned
+│   │   ├── buffer_stop
+│   │   ├── disused
+│   │   ├── level_crossing
+│   │   ├── rail
+│   │   ├── razed
+│   │   └── switch
+│   ├── recreation_ground
+│   ├── residential__landuse
+│   ├── retail__landuse
+│   └── vineyard
+├── leisure
+│   ├── beach_resort
+│   ├── garden
+│   ├── park
+│   ├── picnic_table
+│   ├── pitch
+│   ├── playground
+│   ├── sports_centre
+│   └── swimming_pool
+├── man_made
+│   ├── breakwater
+│   ├── bridge
+│   ├── goods_conveyor
+│   ├── lighthouse
+│   ├── mast
+│   ├── pier
+│   ├── pipeline
+│   ├── storage_tank
+│   ├── tower
+│   └── windmill
+├── natural
+│   ├── bare_rock
+│   ├── beach
+│   ├── cave_entrance
+│   ├── cliff
+│   ├── coastline
+│   ├── grassland
+│   ├── heath
+│   ├── peak
+│   ├── scree
+│   ├── scrub
+│   ├── spring
+│   ├── tree
+│   ├── tree_row
+│   ├── water
+│   │   ├── pond
+│   │   ├── reservoir
+│   │   └── river__water
+│   ├── wetland
+│   └── wood
+├── office
+│   └── government
+├── place
+│   ├── hamlet
+│   ├── island
+│   ├── locality
+│   ├── neighbourhood
+│   ├── square
+│   └── village
+├── religion
+│   └── christian
+├── shop
+│   ├── bakery
+│   ├── bookmaker
+│   ├── books
+│   ├── butcher
+│   ├── car_repair
+│   ├── clothes
+│   ├── confectionery
+│   ├── convenience
+│   ├── florist
+│   ├── gift
+│   ├── greengrocer
+│   ├── hairdresser
+│   ├── jewelry
+│   ├── kiosk
+│   ├── mobile_phone
+│   ├── optician
+│   ├── shoes
+│   └── supermarket
+├── smoothness
+│   ├── bad
+│   ├── excellent
+│   ├── good
+│   └── intermediate
+├── tourism
+│   ├── apartment
+│   ├── artwork
+│   ├── attraction
+│   ├── guest_house
+│   ├── hotel__tourism
+│   ├── information
+│   │   └── board
+│   ├── museum
+│   └── viewpoint
+├── tunnel
+│   └── culvert
+├── type
+│   ├── public_transport
+│   │   ├── platform
+│   │   ├── station
+│   │   └── stop_area
+│   └── route
+│       ├── bus
+│       ├── ferry
+│       ├── hiking
+│       └── road
+├── wall
+│   └── dry_stone
+└── waterway
+    ├── canal
+    ├── ditch
+    ├── drain
+    ├── river__waterway
+    └── stream
