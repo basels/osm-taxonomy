@@ -39,8 +39,9 @@ def main(args):
     del g_osm_tagged_map
 
     # generate taxonomy tree from DataFrame
-    log.info('Generating taxonomy tree...')
-    g_taxo_tree = get_taxo_tree(g_osm_tagged_df, 10)
+    int_thresh = int(args.threshold)
+    log.info(f'Generating taxonomy tree with min-threshold={int_thresh}...')
+    g_taxo_tree = get_taxo_tree(g_osm_tagged_df, int(args.threshold))
     # g_taxo_tree.remove_invalid_tags(['unclassified', 'unofficial', 'multipolygon']) # example for additional filtering
     g_taxo_tree.build_taxonomy_tree()
 
@@ -60,6 +61,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Automatically construct a lightweight taxonomy for geographic features using OpenStreetMap (OSM) data.")
     parser.add_argument("--input", type=str, help="OSM dump (xml) input file name.")
+    parser.add_argument("--threshold", type=str, default='10', help="Minimum frequency threshold per tag.")
     parser.add_argument("--output", type=str, default='tree.json', help="Taxonomy tree (json) file name.")
 
     args = parser.parse_args()
