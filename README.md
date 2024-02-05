@@ -72,7 +72,7 @@ This repository is licensed under the [MIT License](https://raw.githubuserconten
 
 ### Other Repository Contents
 This repository includes the following files:
-- `data/osm_example.osm`: example text file with terms you can use that can be ignored.
+- `data/osm_example.osm`: example OpenStreetMap (OSM) dump file.
 - `data/blacklist_example.txt`: example text file with terms you can use that can be ignored.
 - `data/california_taxonomy.202303.txt`: Textual representation of the taxonomy generated from the California `.osm` dump from March 2023 (based on approximately 10 million tagged instances).
 - `data/greece_taxonomy.202303.txt`: Textual representation of the taxonomy generated from the Greece `.osm` snapshot from March 2023 (based on approximately 2 million tagged instances).
