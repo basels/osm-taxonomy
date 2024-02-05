@@ -173,11 +173,11 @@ def get_osm_types_from_object(osm_object_dict, bad_osm_tags=DEFAULT_BAD_OSM_TAGS
     return ret_dict
 
 
-def build_new_structured_osm_dictionary(tagged_data_dict):
+def build_new_structured_osm_dictionary(tagged_data_dict, bad_osm_tags=DEFAULT_BAD_OSM_TAGS):
     new_dict = {}
     for itm_id, itm_dict in tqdm(tagged_data_dict.items(), total=len(tagged_data_dict)):
         new_dict[itm_id] = deepcopy(itm_dict)
-        new_dict[itm_id]['tags'] = get_osm_types_from_object(itm_dict)
+        new_dict[itm_id]['tags'] = get_osm_types_from_object(itm_dict, bad_osm_tags)
     return new_dict
 
 
