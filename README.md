@@ -4,7 +4,7 @@ The `osm-taxonomy` tool enables the automatic generation of a lightweight and st
 
 ### Install requirements:
 ```commandline
-pip3 install -r requirements.txt
+pip install -e .
 ```
 
 ### Usage

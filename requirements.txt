@@ -1,5 +1,0 @@
-pandas
-tqdm
-treelib
-lxml
-git+https://github.com/basels/mykgutils/

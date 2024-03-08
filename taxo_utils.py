@@ -4,14 +4,12 @@ import lxml.etree
 import pandas as pd
 from copy import deepcopy
 from time import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from sys import stdout
 from os.path import getsize
 from tqdm import tqdm
 from collections import Counter
 from treelib import Node, Tree
-from baselutils import *
-
 
 DEFAULT_BAD_OSM_TAGS = ['source', 'name', 'created_by', 'description', 'email', 'phone', 'yes', 'no']
 MAIN_LABEL = 'label'
@@ -35,6 +33,20 @@ logging.getLogger().addHandler(console)
 log = logging.getLogger(__name__)
 
 # ----------- xml parser --------
+
+def bytes_to_human(size):
+    ''' Returns a human readable file size from a number of bytes. '''
+
+    for unit in ['', 'k', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y']:
+        if size < 1024: break
+        size /= 1024
+    return '%.2f%sB' % (size, unit)
+
+
+def seconds_to_human(seconds):
+    ''' Returns a human readable string from a number of seconds. '''
+
+    return str(timedelta(seconds=int(seconds))).zfill(8)
 
 
 def print_xml_parsing_progress(bytes_processed, total_bytes, start_time):
