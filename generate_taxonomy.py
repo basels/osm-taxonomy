@@ -1,9 +1,8 @@
-from taxo_utils import *
-
 import argparse
 import random
 import json
 import warnings
+from osm_taxonomy import *
 warnings.filterwarnings("ignore")
 
 SEED = 42
