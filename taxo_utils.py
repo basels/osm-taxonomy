@@ -49,7 +49,7 @@ def print_xml_parsing_progress(bytes_processed, total_bytes, start_time):
     stdout.write('\r  %6.02f%% |%s| %s/s eta %s' % (100 * percent, bar, avg_speed, eta))
 
 
-def get_osm_dictionary_from_xml(osm_filename, bad_osm_tags=DEFAULT_BAD_OSM_TAGS):
+def get_osm_dictionary_from_xml(osm_filename, bad_osm_tags=DEFAULT_BAD_OSM_TAGS, get_geodata=False):
     """Extracts OpenStreetMap data from an XML file into a dictionary."""
 
     osm_data = {}
@@ -71,6 +71,10 @@ def get_osm_dictionary_from_xml(osm_filename, bad_osm_tags=DEFAULT_BAD_OSM_TAGS)
             if elem.tag in ('node', 'way', 'relation'):
                 item_id = elem.tag + '/' + elem.attrib['id']
                 osm_data.setdefault(item_id, {})
+                if get_geodata is True and elem.tag == 'node':
+                    if item_id not in osm_data.keys():
+                        # add node to dict, set: lat, lon (next we add tags)
+                        osm_data[item_id] = {'lat': elem.attrib['lat'], 'lon': elem.attrib['lon']}
 
             # Tag parsing
             elif elem.tag == 'tag' and item_id in osm_data:
