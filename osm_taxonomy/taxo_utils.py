@@ -84,9 +84,7 @@ def get_osm_dictionary_from_xml(osm_filename, bad_osm_tags=DEFAULT_BAD_OSM_TAGS,
                 item_id = elem.tag + '/' + elem.attrib['id']
                 osm_data.setdefault(item_id, {})
                 if get_geodata is True and elem.tag == 'node':
-                    if item_id not in osm_data.keys():
-                        # add node to dict, set: lat, lon (next we add tags)
-                        osm_data[item_id] = {'lat': elem.attrib['lat'], 'lon': elem.attrib['lon']}
+                    osm_data[item_id] = {'lat': elem.attrib['lat'], 'lon': elem.attrib['lon']}
 
             # Tag parsing
             elif elem.tag == 'tag' and item_id in osm_data:
